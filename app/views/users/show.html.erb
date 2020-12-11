@@ -9,6 +9,7 @@
         <%= gravatar_for @user %>
         <%= @user.name %>
       </h1>
+      <!-- 更换头像新增代码show页面和help页面 --><br><br><%= link_to "修改头像", help_path %>
     </section>
     <section class="stats">
       <%= render 'shared/stats' %>
