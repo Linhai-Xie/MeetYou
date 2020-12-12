@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
         log_in user
         redirect_to forwarding_url || user
       # else
-      #   message  = "账户未激活 "
+      #   message  = "账户未激活"
       #   message += "请查看您注册使用的邮箱内新邮件点击激活"
       #   flash[:warning] = message
       #   redirect_to root_url
