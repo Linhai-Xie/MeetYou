@@ -10,7 +10,7 @@ class MatchController < ApplicationController
   	#以上语句找出了 （同一研究所||同一地区所||同一家乡）&&(异性）
   	# @users = User.where(:dept => @s)
   	#根据生日计算年龄差（数据库生日应该存为date类型而不是string）
-  	#"19980905"-->"1998"-->1998--98
+  	#"19980905"-->"1998"-->1998--98 
     #"980905"-->98
     if myInfo.birthday.length>6
   	  myBirthday=(myInfo.birthday)[0,4].to_i
