@@ -7,5 +7,4 @@ class SearchController < ApplicationController
 		@stmt = "content LIKE '%"+params[:posts]+"%\'"
   		@microposts=  Micropost.where(@stmt)
 	end
-
 end
